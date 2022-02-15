@@ -1,4 +1,4 @@
-# Práctica 1. El entorno de desarrollo de PAI. Node Express Static Web Server. Exercism
+# Práctica 1. El entorno de desarrollo de PAI. Node Express Static Web Server. Jutge
 ### Factor de ponderación: 3
 
 ### Objetivos
@@ -7,7 +7,7 @@ Los objetivos de esta práctica son:
 * Conocer y configurar el entorno de trabajo de la asignatura en el sistema Linux del IaaS
 * Configurar y practicar el uso del Visual Studio Code para editar ficheros en la máquina IaaS de la asignatura
 * Instalar un servidor web estático en la máquina virtual de la asignatura
-* Conocer y configurar el entorno de trabajo de Exercism
+* Conocer la plataforma Jutge
 
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
@@ -15,7 +15,7 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Se valorará la realización de las diferentes tareas que se proponen
 * El alumnado ha de acreditar que es capaz de editar ficheros de forma remota en su VM usando VSC
 * El alumnado ha de ser capaz de instalar y mantener ejecutando un servidor web estático
-* El alumnado debe ser capaz de subir la solución a un problema de Exercism a esa plataforma
+* El alumnado debe ser capaz de subir la solución a un problema de Jutge a esa plataforma
 
 Para la realización de las prácticas de PAI
 debe Ud. estudiar los documentos que se enlazan desde
@@ -157,7 +157,7 @@ Compruebe a continuación el sistema operativo y versión del mismo:
 $ lsb_release -a
 ```
 
-9. Actualice el software (paquetes) de la máquina siguiendo las indicaciones de [esta página](https://linuxconfig.org/how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux) (por ejemplo).
+9. **TAREA #04** Actualice el software (paquetes) de la máquina siguiendo las indicaciones de [esta página](https://linuxconfig.org/how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux) (por ejemplo).
 Los comandos que tendrá que utilizar son:
 ```
 $ sudo apt update
@@ -203,7 +203,7 @@ $ git --version
 Consulte para ello las instrucciones
 [Adding a new SSH key to your GitHub account](https://docs.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account)
 
-13. **TAREA #04** Cree un directorio `practicas` y  clone en él el siguiente repositorio git:
+13. **TAREA #05** Cree un directorio `practicas` y  clone en él el siguiente repositorio git:
 ```
 cd
 mkdir practicas
@@ -232,11 +232,11 @@ muestra el paso 2 del apartado "Connect to a remote host" de esas instrucciones 
 muestra la ventana de autentificación de VSC para darle acceso a la máquina virtual.  
 Una vez completado este proceso se podrán editar ficheros en la máquina virtual usando VSC.
 
-15. **TAREA #05** Utilice el VSC para editar de forma remota el código fuente del programa 
+15. **TAREA #06** Utilice el VSC para editar de forma remota el código fuente del programa 
 [computePI.js](https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P01-EnvironmentWebServer/blob/master/www/js/computePI.js)
 en su máquina virtual.
 
-16. **TAREA #06** Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
+16. **TAREA #07** Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
 para establecer la configuración de la máquina de modo que se pueda conectar a ella sin necesidad de escribir el password en cada conexión. 
 Para poder conectarse por ssh con las máquinas virtuales de IaaS ull ha de autentificarse en la página [acceso.ull.es](acceso.ull.es).  
 Recuerde que en caso de acceder desde fuera de del campus ULL ha de hacerlo mediante una conexión VPN. 
@@ -266,7 +266,7 @@ creado puede visualizar diferentes webs que pudiera crear en el futuro. Experime
 
 Para instalar el servidor utilizaremos [Node.js](https://nodejs.org), que es un entorno de ejecucion para JavaScript.
 
-18. **TAREA #07** Establezca una conexión `ssh` con su máquina virtual IaaS y utilice 
+18. **TAREA #08** Establezca una conexión `ssh` con su máquina virtual IaaS y utilice 
 [esta referencia](https://lenguajejs.com/npm/introduccion/que-es/) 
 para conocer `npm` e instalarlo en la máquina virtual.
 
@@ -290,7 +290,7 @@ npm install
 npm start
 ```
 
-22. **TAREA #08** Abra una página en su navegador local con la siguiente dirección:
+22. **TAREA #09** Abra una página en su navegador local con la siguiente dirección:
 
 ```
 http://<your VM IP address>:8080
@@ -304,7 +304,7 @@ $ nohup sudo -b npm start
 en el paso 21 anterior.
 
 ### La plataforma Jutge
-22. **TAREA #09** En su correo electrónico debe tener un mensaje de invitación a la plataforma Jutge.
+22. **TAREA #10** En su correo electrónico debe tener un mensaje de invitación a la plataforma Jutge.
 Acepte esa invitación y regístrese en la plataforma con su **cuenta de correo institucional**.
 
 [Jutge](https://jutge.org/) es una plataforma que ha sido desarrollada en la
