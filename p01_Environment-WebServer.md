@@ -259,10 +259,8 @@ $ ssh maquina_pai
 para conectarse a la máquina virtual.
 
 ### Servidor web basado en Node y Express
-Establezca una conexión `ssh` con su máquina virtual IaaS.
 
-utilice [esta referencia](https://lenguajejs.com/npm/introduccion/que-es/) para conocer `npm` e instalarlo en
-su máquina virtual.
+[![Node Logo](http://sub1.kevinchisholm.com/blog/images/node-js-logo.png)](http://blog.kevinchisholm.com/?s=node)
 
 Siguiendo estas instrucciones instalará en su máquina IaaS un servidor web basado en Node y Express. 
 No es necesario que conozca los detalles de estas herramientas, sino simplemente seguir las instrucciones suministradas.
@@ -273,36 +271,37 @@ valor de PI de forma aproximada.
 Modificando convenientemente el fichero index.html (o colocando los ficheros necesarios en su lugar) en el directorio `www` del proyecto 
 creado puede visualizar diferentes webs que pudiera crear en el futuro. Experimente con este servidor web.
 
+Para instalar el servidor utilizaremos [Node.js](https://nodejs.org), que es un entorno de ejecucion para JavaScript.
 
-[![Node Logo](http://sub1.kevinchisholm.com/blog/images/node-js-logo.png)](http://blog.kevinchisholm.com/?s=node)
+18. **TAREA #06**
 
-## Dependencias
-
-Lo que se precisa para ejecutar instalar el servidor: 
-
-* [Node.Js](https://nodejs.org)
+Establezca una conexión `ssh` con su máquina virtual IaaS y utilice 
+[esta referencia](https://lenguajejs.com/npm/introduccion/que-es/) 
+para conocer `npm` e instalarlo en la máquina virtual.
 
 ### Configuración
 
-18. Sitúese en el directorio raíz de se proyecto para esta práctica (en el que se encuentra el fichero `package.json`) para trabajar en él:
+19. Sitúese en el directorio raíz de se proyecto para esta práctica (en el que se encuentra el fichero `package.json`) para trabajar en él:
 
 ```
 cd <yourDirectory>
 ```
 
-19. Ejecute este comando:
+20. Ejecute este comando:
 
 ```
 npm install
 ```
 
-20. Ejecute a continuación:
+21. Ejecute a continuación:
 
 ```
 npm start
 ```
 
-21. Abra una página en su navegador local con la siguiente dirección:
+22. **TAREA #07**
+
+Abra una página en su navegador local con la siguiente dirección:
 
 ```
 http://<your VM IP address>:8080
@@ -313,7 +312,7 @@ virtual utilice el comando
 ```
 $ nohup sudo -b npm start
 ```
-en el paso 20 anterior.
+en el paso 21 anterior.
 
 ### Exercism
 [Exercism](https://exercism.io/) es una plataforma orientada a aprender a programar o también a mejorar las
