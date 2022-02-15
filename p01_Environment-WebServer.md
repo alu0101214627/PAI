@@ -238,12 +238,13 @@ Una vez completado este proceso se podrán editar ficheros en la máquina virtua
 
 15. **TAREA #05** 
 
-Utilice el VSC para editar el código fuente del programa 
-[computePI.js](https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P01-EnvironmentWebServer/blob/master/www/js/computePI.js).
-Grabe ese fichero en el directorio ~/practicas/ de su máquina virtual.
-Acceda a la máquina virtual usando ssh, compile y ejecute ese programa.
+Utilice el VSC para editar de forma remota el código fuente del programa 
+[computePI.js](https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P01-EnvironmentWebServer/blob/master/www/js/computePI.js)
+en su máquina virtual.
 
-16. Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
+16. **TAREA #06** 
+
+Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
 para establecer la configuración de la máquina de modo que se pueda conectar a ella sin necesidad de escribir el password en cada conexión. 
 Para poder conectarse por ssh con las máquinas virtuales de IaaS ull ha de autentificarse en la página [acceso.ull.es](acceso.ull.es).  
 Recuerde que en caso de acceder desde fuera de del campus ULL ha de hacerlo mediante una conexión VPN. 
@@ -273,7 +274,7 @@ creado puede visualizar diferentes webs que pudiera crear en el futuro. Experime
 
 Para instalar el servidor utilizaremos [Node.js](https://nodejs.org), que es un entorno de ejecucion para JavaScript.
 
-18. **TAREA #06**
+18. **TAREA #07**
 
 Establezca una conexión `ssh` con su máquina virtual IaaS y utilice 
 [esta referencia](https://lenguajejs.com/npm/introduccion/que-es/) 
@@ -299,7 +300,7 @@ npm install
 npm start
 ```
 
-22. **TAREA #07**
+22. **TAREA #08**
 
 Abra una página en su navegador local con la siguiente dirección:
 
