@@ -258,42 +258,13 @@ $ ssh maquina_pai
 ```
 para conectarse a la máquina virtual.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Servidor web basado en Node y Express
 Establezca una conexión `ssh` con su máquina virtual IaaS.
 
 utilice [esta referencia](https://lenguajejs.com/npm/introduccion/que-es/) para conocer `npm` e instalarlo en
 su máquina virtual.
 
-Clone este repositorio en su VM del IaaS-ULL y siga estas instrucciones para instalar en la máquina IaaS un servidor web basado en Node y Express. 
+Siguiendo estas instrucciones instalará en su máquina IaaS un servidor web basado en Node y Express. 
 No es necesario que conozca los detalles de estas herramientas, sino simplemente seguir las instrucciones suministradas.
 
 Si todo funciona correctamente, al abrir un navegador en la URL `http://<your VM IP address>:8080` debería ejecutar en esa web un programa que calcula el 
