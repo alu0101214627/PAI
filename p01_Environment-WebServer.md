@@ -23,6 +23,10 @@ debe Ud. estudiar los documentos que se enlazan desde
 
 **Avise al profesor** al finalizar la realización de cada una de las tareas que se indican a continuación. No inicie una nueva tarea sin haber revisado la anterior.
 
+TAREA #01
+
+Si aún no lo ha hecho, coloque una fotografía adecuada en su perfil del Campus Virtual de la ULL.
+
 ### Entorno de trabajo exterior a la ULL
 1. Para el trabajo en las prácticas de la asignatura se utilizará intensivamente el Sistema Operativo Linux,
 trabajando fundamentalmente en una máquina virtual disponible a través de la infraestructura [IaaS de la
@@ -70,7 +74,8 @@ Virtual de la Asignatura.
 Siga las instrucciones de ese documento para acceder a la [interfaz web de las máquinas IaaS](https://iaas.ull.es)
 (necesitará establecer una conexión VPN).
 
-3. TAREA #01
+3. TAREA #02
+
 Acceda al [portal de gestión de usuarios](https://usuarios.ull.es/autogestion/cambio_alias/)
 del Servicio TIC de la ULL y configure allí una dirección de correo electrónico alternativa a su dirección
 `aluXXXX@ull.edu.es`.
@@ -79,7 +84,8 @@ numéricos (sin significado específico alguno) y permiten que su dirección de 
 recordar, sobre todo para otras personas.
 Podrá utilizar indistintamente las direcciones `aluXXXX@ull.edu.es` y el alias que configure.
 
-4. TAREA #02 
+4. TAREA #03 
+
 [GitHub](https://github.com/) es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
 Si no dispone ya de una, cree una cuenta en [GitHub](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
 Configure el perfil de esa cuenta de modo que incluya una imagen (fotografía) en la que se le reconozca y haga que la cuenta de e-mail asociada sea la dirección institucional o su alias.
@@ -134,7 +140,7 @@ Si en algún momento experimenta dificultades de conexión, conecte a través de
 la dirección de la máquina no ha cambiado.
 Para consultar la IP de una máquina en un terminal Linux utilice el comando:
 ```
-$ ifconfig -a
+$ ip addr
 ```
 
 8. Abra en el navegador la consola de la máquina (VNC Console (Browser)) y acceda a la misma.
@@ -199,12 +205,14 @@ $ git --version
 Consulte para ello las instrucciones
 [Adding a new SSH key to your GitHub account](https://docs.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account)
 
-13. Cree un directorio `practicas` y  clone en él un repositorio git:
+13. TAREA #04
+
+Cree un directorio `practicas` y  clone en él un repositorio git:
 ```
 cd
 mkdir practicas
 cd practicas
-git clone git@github.com:fsande/IB-P01-EntornoIaaS.git 2019-2020-IB-P01-EntornoIaaS
+git clone git@github.com:ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P01-EnvironmentWebServer.git
 ```
  
 14. En la máquina local ejecute el Microsoft Visual Studio Code (VSC) y siga 
@@ -228,8 +236,10 @@ muestra el paso 2 del apartado "Connect to a remote host" de esas instrucciones 
 muestra la ventana de autentificación de VSC para darle acceso a la máquina virtual.  
 Una vez completado este proceso se podrán editar ficheros en la máquina virtual usando VSC.
 
-15. Utilice el VSC para escribir el código fuente del programa 
-[HelloWorld.cc](https://github.com/fsande/IB-class-code-examples/blob/master/IntroductionToC%2B%2B/hello_world.cc).
+15. TAREA #05 
+
+Utilice el VSC para editar el código fuente del programa 
+[computePI.js](https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P01-EnvironmentWebServer/blob/master/www/js/computePI.js).
 Grabe ese fichero en el directorio ~/practicas/ de su máquina virtual.
 Acceda a la máquina virtual usando ssh, compile y ejecute ese programa.
 
