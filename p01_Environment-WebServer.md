@@ -257,8 +257,8 @@ para conectarse a la máquina virtual.
 
 [![Node Logo](http://sub1.kevinchisholm.com/blog/images/node-js-logo.png)](http://blog.kevinchisholm.com/?s=node)
 
-Siguiendo estas instrucciones instalará en su máquina IaaS un servidor web basado en Node y Express. 
-No es necesario que conozca los detalles de estas herramientas, sino simplemente seguir las instrucciones suministradas.
+Siguiendo las instrucciones que siguen instalará en su máquina IaaS un servidor web basado en Node y Express. 
+No es necesario que conozca los detalles de estas herramientas, sino simplemente seguir las indicaciones suministradas.
 
 Si todo funciona correctamente, al abrir un navegador en la URL `http://<your VM IP address>:8080` debería ejecutar en esa web un programa que calcula el 
 valor de PI de forma aproximada.
@@ -266,7 +266,9 @@ valor de PI de forma aproximada.
 Modificando convenientemente el fichero index.html (o colocando los ficheros necesarios en su lugar) en el directorio `www` del proyecto 
 creado puede visualizar diferentes webs que pudiera crear en el futuro. Experimente con este servidor web.
 
-Para instalar el servidor utilizaremos [Node.js](https://nodejs.org), que es un entorno de ejecucion para JavaScript.
+Para instalar el servidor se utilizará 
+[Node.js](https://nodejs.org), 
+que es un entorno de ejecucion para JavaScript.
 
 18. **TAREA #08** Establezca una conexión `ssh` con su máquina virtual IaaS y utilice 
 [esta referencia](https://lenguajejs.com/npm/introduccion/que-es/) 
@@ -274,7 +276,7 @@ para conocer `npm` e instalarlo en la máquina virtual.
 
 ### Configuración
 
-19. Sitúese en el directorio raíz de se proyecto para esta práctica (en el que se encuentra el fichero `package.json`) para trabajar en él:
+19. Sitúese en el directorio raíz de su proyecto para esta práctica (en el que se encuentra el fichero `package.json`):
 
 ```
 cd <yourDirectory>
