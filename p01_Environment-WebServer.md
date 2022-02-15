@@ -112,11 +112,6 @@ Para editar algunas líneas concretas de un fichero de texto usando vi siga esta
 
 ### El Entorno ULL-IaaS
 
-Deje constancia en ficheros locales de la máquina IaaS-ULL en la que trabaja de todos los cambios que realice. 
-Estos ficheros ha de subirlos al repositorio que ha de entregar con la práctica. Así, p. ej. si edita Ud. el fichero `/.ssh/config` 
-deje una copia de ese fichero el su directorio de trabajo src y nombre ese fichero de modo que se sepa de qué se trata (use por ejemplo el nombre `ssh-config.txt` para ese fichero que ha de entregar. 
-Recuerde dejar en el directorio src de su repositorio **copia de todos** los ficheros que edite en el sistema.
-
 Desarrolle en secuencia cada una de las tareas que se describen en los siguientes puntos, pero ocúpese no solo de “ejecutar comandos” 
 sino de estudiar y entender el significado e implicaciones de cada uno de ellos.
 
