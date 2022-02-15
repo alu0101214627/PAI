@@ -75,16 +75,14 @@ muestra la conexión ya establecida.
 
 [Este vídeo](https://youtu.be/ZHZ-R--fQ68) muestra cómo establecer en linux una conexión vpn y [este otro](https://www.youtube.com/watch?v=jHUfeN_NMYE&feature=youtu.be) muestra cómo conectar desde linux usando ssh con una máquina virtual del IaaS.
 
-2. Estudie el documento 
+2. Estudie si le resulta necesario el documento 
 [Manual de administración de Máquinas](https://docs.google.com/document/d/1nj-dxu7LXrNhj3ewCdfaPSc8OV4e_TYpGTQdK78YExY/edit).
 Tenga en cuenta que el acceso a la infraestructura IaaS está ligado a que esté Ud. registrada/o en el Aula
 Virtual de la Asignatura.
 Siga las instrucciones de ese documento para acceder a la [interfaz web de las máquinas IaaS](https://iaas.ull.es)
 (necesitará establecer una conexión VPN).
 
-3. **TAREA #02**
-
-Acceda al [portal de gestión de usuarios](https://usuarios.ull.es/autogestion/cambio_alias/)
+3. **TAREA #02** Acceda al [portal de gestión de usuarios](https://usuarios.ull.es/autogestion/cambio_alias/)
 del Servicio TIC de la ULL y configure allí una dirección de correo electrónico alternativa a su dirección
 `aluXXXX@ull.edu.es`.
 Las direcciones (alias) alternativas que el sistema le ofrece han de incluir necesariamente dos dígitos
