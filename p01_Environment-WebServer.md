@@ -23,7 +23,7 @@ debe Ud. estudiar los documentos que se enlazan desde
 
 **Avise al profesor** al finalizar la realización de cada una de las tareas que se indican a continuación. No inicie una nueva tarea sin haber revisado la anterior.
 
-TAREA #01
+**TAREA #01**
 
 Si aún no lo ha hecho, coloque una fotografía adecuada en su perfil del Campus Virtual de la ULL.
 
@@ -74,7 +74,7 @@ Virtual de la Asignatura.
 Siga las instrucciones de ese documento para acceder a la [interfaz web de las máquinas IaaS](https://iaas.ull.es)
 (necesitará establecer una conexión VPN).
 
-3. TAREA #02
+3. **TAREA #02**
 
 Acceda al [portal de gestión de usuarios](https://usuarios.ull.es/autogestion/cambio_alias/)
 del Servicio TIC de la ULL y configure allí una dirección de correo electrónico alternativa a su dirección
@@ -84,7 +84,7 @@ numéricos (sin significado específico alguno) y permiten que su dirección de 
 recordar, sobre todo para otras personas.
 Podrá utilizar indistintamente las direcciones `aluXXXX@ull.edu.es` y el alias que configure.
 
-4. TAREA #03 
+4. **TAREA #03**
 
 [GitHub](https://github.com/) es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
 Si no dispone ya de una, cree una cuenta en [GitHub](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
@@ -205,7 +205,7 @@ $ git --version
 Consulte para ello las instrucciones
 [Adding a new SSH key to your GitHub account](https://docs.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account)
 
-13. TAREA #04
+13. **TAREA #04**
 
 Cree un directorio `practicas` y  clone en él un repositorio git:
 ```
@@ -236,7 +236,7 @@ muestra el paso 2 del apartado "Connect to a remote host" de esas instrucciones 
 muestra la ventana de autentificación de VSC para darle acceso a la máquina virtual.  
 Una vez completado este proceso se podrán editar ficheros en la máquina virtual usando VSC.
 
-15. TAREA #05 
+15. **TAREA #05** 
 
 Utilice el VSC para editar el código fuente del programa 
 [computePI.js](https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P01-EnvironmentWebServer/blob/master/www/js/computePI.js).
@@ -284,31 +284,25 @@ Lo que se precisa para ejecutar instalar el servidor:
 
 ### Configuración
 
-* 1 - Clone este repo en el directorio de esta práctica: 
-
-```
-git clone git@github.com:fsande/PAI-P02-WebServer-Exercism.git <yourDirectory>
-```
-
-* 2 - Sitúese en ese directorio para trabajar en él:
+18. Sitúese en el directorio raíz de se proyecto para esta práctica (en el que se encuentra el fichero `package.json`) para trabajar en él:
 
 ```
 cd <yourDirectory>
 ```
 
-* 3 - Ejecute este comando:
+19. Ejecute este comando:
 
 ```
 npm install
 ```
 
-* 4 - Ejecute a continuación:
+20. Ejecute a continuación:
 
 ```
 npm start
 ```
 
-* 5 - Abra una página en su navegador con la siguiente dirección:
+21. Abra una página en su navegador local con la siguiente dirección:
 
 ```
 http://<your VM IP address>:8080
@@ -319,7 +313,7 @@ virtual utilice el comando
 ```
 $ nohup sudo -b npm start
 ```
-en el paso 5 anterior.
+en el paso 20 anterior.
 
 ### Exercism
 [Exercism](https://exercism.io/) es una plataforma orientada a aprender a programar o también a mejorar las
