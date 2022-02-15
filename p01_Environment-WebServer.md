@@ -24,9 +24,7 @@ debe Ud. estudiar los documentos que se enlazan desde
 **Avise al profesor** al finalizar la realización de cada una de las **TAREAS** que se indican a continuación. 
 No inicie una nueva tarea sin haber revisado la anterior.
 
-**TAREA #01**
-
-Si aún no lo ha hecho, coloque una fotografía adecuada en su perfil del Campus Virtual de la ULL.
+**TAREA #01** Si aún no lo ha hecho, coloque una fotografía adecuada en su perfil del Campus Virtual de la ULL.
 
 ### Entorno de trabajo exterior a la ULL
 
@@ -90,9 +88,8 @@ numéricos (sin significado específico alguno) y permiten que su dirección de 
 recordar, sobre todo para otras personas.
 Podrá utilizar indistintamente las direcciones `aluXXXX@ull.edu.es` y el alias que configure.
 
-4. **TAREA #03**
-
-[GitHub](https://github.com/) es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
+4. **TAREA #03** [GitHub](https://github.com/) 
+es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
 Si no dispone ya de una, cree una cuenta en [GitHub](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
 Configure el perfil de esa cuenta de modo que incluya una imagen (fotografía) en la que se le reconozca y haga que la cuenta de e-mail asociada sea la dirección institucional o su alias.
 Para la configuración de esa cuenta se le recomienda usar su nombre real, puesto que sus repositorios de código en GitHub
@@ -211,9 +208,7 @@ $ git --version
 Consulte para ello las instrucciones
 [Adding a new SSH key to your GitHub account](https://docs.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account)
 
-13. **TAREA #04**
-
-Cree un directorio `practicas` y  clone en él un repositorio git:
+13. **TAREA #04** Cree un directorio `practicas` y  clone en él el siguiente repositorio git:
 ```
 cd
 mkdir practicas
@@ -242,15 +237,11 @@ muestra el paso 2 del apartado "Connect to a remote host" de esas instrucciones 
 muestra la ventana de autentificación de VSC para darle acceso a la máquina virtual.  
 Una vez completado este proceso se podrán editar ficheros en la máquina virtual usando VSC.
 
-15. **TAREA #05** 
-
-Utilice el VSC para editar de forma remota el código fuente del programa 
+15. **TAREA #05** Utilice el VSC para editar de forma remota el código fuente del programa 
 [computePI.js](https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P01-EnvironmentWebServer/blob/master/www/js/computePI.js)
 en su máquina virtual.
 
-16. **TAREA #06** 
-
-Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
+16. **TAREA #06** Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
 para establecer la configuración de la máquina de modo que se pueda conectar a ella sin necesidad de escribir el password en cada conexión. 
 Para poder conectarse por ssh con las máquinas virtuales de IaaS ull ha de autentificarse en la página [acceso.ull.es](acceso.ull.es).  
 Recuerde que en caso de acceder desde fuera de del campus ULL ha de hacerlo mediante una conexión VPN. 
@@ -280,9 +271,7 @@ creado puede visualizar diferentes webs que pudiera crear en el futuro. Experime
 
 Para instalar el servidor utilizaremos [Node.js](https://nodejs.org), que es un entorno de ejecucion para JavaScript.
 
-18. **TAREA #07**
-
-Establezca una conexión `ssh` con su máquina virtual IaaS y utilice 
+18. **TAREA #07** Establezca una conexión `ssh` con su máquina virtual IaaS y utilice 
 [esta referencia](https://lenguajejs.com/npm/introduccion/que-es/) 
 para conocer `npm` e instalarlo en la máquina virtual.
 
@@ -306,9 +295,7 @@ npm install
 npm start
 ```
 
-22. **TAREA #08**
-
-Abra una página en su navegador local con la siguiente dirección:
+22. **TAREA #08** Abra una página en su navegador local con la siguiente dirección:
 
 ```
 http://<your VM IP address>:8080
