@@ -119,6 +119,12 @@ sino de estudiar y entender el significado e implicaciones de cada uno de ellos.
 En este documento se denominará máquina remota a la máquina virtual (VM) del [IaaS-ULL](https://www.ull.es/servicios/stic/2015/10/27/nuevo-servicio-iaas/) 
 y máquina local al PC del centro de cálculo en el que está trabajando.
 
+Recuerde siempre que para poder conectarse por ssh con las máquinas virtuales de IaaS ull ha de autentificarse en la página 
+[acceso.ull.es](acceso.ull.es).  
+Recuerde asimismo que en caso de acceder desde fuera de del campus ULL ha de hacerlo mediante una conexión VPN. 
+Consulte [esta referencia](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/) 
+(en el Centro de Cálculo, por ahora no lo necesita) para conectarse a través de vpn.
+
 7. Acceda a la [interfaz web](https://iaas.ull.es/ovirt-engine/sso/login.html) 
 de la plataforma IaaS-ULL y autentifíquese en esa interfaz con sus credenciales (username + password) de la cuenta institucional. 
 [Esta imagen](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/1-Ovirt-login.png)
@@ -177,7 +183,7 @@ que ilustran esas opciones.
 
 
 10. Edite los ficheros necesarios para [cambiar el nombre lógico de la máquina](https://askubuntu.com/questions/9540/how-do-i-change-the-computer-name) que le ha sido asignada. 
-Se propone utilizar como nombre algo como Ubuntu-18-IB-XXX (cambiando "XXX" por lo que Ud. quiera), aunque puede Ud. usar para su máquina el nombre que prefiera.
+Se propone utilizar como nombre algo como Ubuntu-18-PAI-XXX (cambiando "XXX" por lo que Ud. quiera), aunque puede Ud. usar para su máquina el nombre que prefiera.
 Para realizar ese cambio ha de editar Ud. los siguientes ficheros (necesita usar `sudo` para tener permisos de
 root al tratarse de ficheros del sistema) y sustituir en ellos el nombre actual de la máquina (que es "ubuntu") por el que haya elegido:
 ```
@@ -203,7 +209,7 @@ $ git --version
 Consulte para ello las instrucciones
 [Adding a new SSH key to your GitHub account](https://docs.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account)
 
-13. **TAREA #05** Cree un directorio `practicas` y  clone en él el siguiente repositorio git:
+13. **TAREA #05** Cree un directorio `practicas` y  clone en él el repositorio de esta práctica:
 ```
 cd
 mkdir practicas
@@ -234,14 +240,10 @@ Una vez completado este proceso se podrán editar ficheros en la máquina virtua
 
 15. **TAREA #06** Utilice el VSC para editar de forma remota el código fuente del programa 
 [computePI.js](https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P01-EnvironmentWebServer/blob/master/www/js/computePI.js)
-en su máquina virtual.
+que se encuentra en el directorio `www/js/` del proyecto de esta práctica.
 
 16. **TAREA #07** Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
 para establecer la configuración de la máquina de modo que se pueda conectar a ella sin necesidad de escribir el password en cada conexión. 
-Para poder conectarse por ssh con las máquinas virtuales de IaaS ull ha de autentificarse en la página [acceso.ull.es](acceso.ull.es).  
-Recuerde que en caso de acceder desde fuera de del campus ULL ha de hacerlo mediante una conexión VPN. 
-Consulte [esta referencia](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/) 
-(en el Centro de Cálculo, por ahora no lo necesita) para conectarse a través de vpn.
 
 17. También resulta conveniente utilizar alguno de los métodos (ssh config o alias) que se presentan en 
 [estas instrucciones](https://scotch.io/tutorials/how-to-create-an-ssh-shortcut) 
