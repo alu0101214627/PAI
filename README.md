@@ -1,5 +1,5 @@
-## PAI Lab assignment (lab, class presentation with slides) structure
-This directory is organised as follows:
+## PAI Lab assignment 
+The project directory organization is as follows:
 
       .
       ├── web-server
