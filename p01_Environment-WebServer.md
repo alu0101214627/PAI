@@ -21,51 +21,59 @@ Para la realización de las prácticas de PAI
 debe Ud. estudiar los documentos que se enlazan desde
 éste así como realizar todas las tareas que en este documento se proponen.
 
-**Avise al profesor** al finalizar la realización de cada una de las tareas que se indican a continuación. No inicie una nueva tarea sin haber revisado la anterior.
+**Avise al profesor** al finalizar la realización de cada una de las **TAREAS** que se indican a continuación. 
+No inicie una nueva tarea sin haber revisado la anterior.
 
 **TAREA #01**
 
 Si aún no lo ha hecho, coloque una fotografía adecuada en su perfil del Campus Virtual de la ULL.
 
 ### Entorno de trabajo exterior a la ULL
-1. Para el trabajo en las prácticas de la asignatura se utilizará intensivamente el Sistema Operativo Linux,
-trabajando fundamentalmente en una máquina virtual disponible a través de la infraestructura [IaaS de la
-ULL](https://www.ull.es/servicios/stic/2015/10/27/nuevo-servicio-iaas/).
-Es por ello que resulta muy conveniente que el alumnado tenga instalado Linux en el ordenador personal con el que
-trabaje desde casa. Optaremos preferentemente por la distribución Ubuntu para que sea la misma que tiene la
-máquina virtual de la asignatura.  
-Hay al menos dos opciones para ello:
 
-  * Si dispone Ud. de un ordenador propio que pueda formatear (borrando por tanto toda la información)
+1. Para el trabajo en las prácticas de la asignatura se utilizará intensivamente el Sistema Operativo Linux,
+trabajando fundamentalmente en una [máquina virtual](https://es.wikipedia.org/wiki/M%C3%A1quina_virtual) disponible a través de la infraestructura 
+[IaaS](https://es.wikipedia.org/wiki/Infraestructura_como_servicio_(IaaS)) de la ULL.
+Es por ello que resulta muy conveniente que el alumnado tenga instalado Linux en un ordenador personal con el que
+trabaje desde su casa. 
+Se optará preferentemente por la distribución Ubuntu para que sea la misma que tiene la máquina virtual de la asignatura.  
+Hay al menos tres opciones para ello, que son las siguientes en orden de mayor a menor idoneidad para el trabajo en la asignatura:
+
+  * Si dispone Ud. de un ordenador propio, de uso exclusivo, que pueda formatear (borrando por tanto toda la información)
   instale directamente Ubuntu en él siguiendo (por ejemplo) 
   [estas instrucciones](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview). 
   Para esta instalación necesitará Ud. crear un pendrive desde el que pueda arrancar el ordenador. 
   Siga para ello (por ejemplo) 
   [estas otras instrucciones](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview).
 
-  * Otra posibilidad es instalar Ubuntu como un sistema "invitado" dentro de Windows usando para ello un
+  * Instalar Ubuntu como un sistema "invitado" dentro de Windows usando para ello un
   software de virtualización como VirtualBox. 
   La página [Install Ubuntu on Oracle VirtualBox](https://brb.nci.nih.gov/seqtools/installUbuntu.html)
   contiene las instrucciones a seguir para instalar Ubuntu como sistema invitado en Windows.
+  
+  * Utilizar WSL, [Windows subsystem for Linux](https://docs.microsoft.com/es-es/windows/wsl/install-win10).
+  WSL es una característica introducida en Windows 10 que permite instalar un núcleo Linux directamente sobre el sistema operativo de Microsoft.
 
-Una opción alternativa que se considera menos adecuada consite en no instalar un sistema Linux sino acceder 
+Las tres opciones anteriores están ordenadas atendiendo a la que consideramos idoneidad de cada una, siendo la primera la más idónea, pero este orden posiblemente coincide con el orden inverso de complejidad de la instalación: la primera es posiblemente más compleja que la tercera. 
+Tenga esto en cuenta a la hora de decidirse por cualquiera de estas opciones.
+
+Una opción alternativa que se considera menos adecuada consiste en no instalar un sistema Linux sino acceder 
 a la máquina virtual IaaS de la asignatura desde Windows usando para ello un cliente ssh. 
 Se recomienda para este caso instalar en Windows [el cliente ssh PuTTY](https://www.putty.org/) que puede Ud. descargar libremente.  
-[Esta imagen](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/Putty-connection.PNG)
-muestra los parámetros para establecer una conexión con una máquina IaaS usando PuTTY y 
-[esta otra](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/Putty-login.PNG)
-muestra la conexión ya establecida.
+[Este vídeo](https://www.youtube.com/watch?v=_-rS8QM0JaI) muestra cómo configurar la VPN en Windows y cómo usar Putty para acceder a una máquina virtual.
 
 En todo caso recuerde que si desea acceder a las máquinas de la Universidad desde fuera del campus
-universitario necesitará Ud. configurar una conexión usando VPN.
+universitario necesitará Ud. configurar una conexión usando [VPN](https://es.wikipedia.org/wiki/Red_privada_virtual).
 Para configurar la conexión VPN siga las instrucciones de la página [Servicio de VPN de la ULL](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/).  
-Para conexiones VPN usando Windows ha de instalar la aplicación Global Protect.
+Para conexiones VPN usando Windows ha de instalar la aplicación Global Protect tal como se explica en el documento
+[Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Windows](https://drive.google.com/open?id=0B3mzWpxzbJD1Zm9TdmpXSV9mdGs).
 [Esta imagen](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/GlobalProtect.PNG)
 muestra el establecimiento de la conexión VPN con la red de la ULL,
 [esta otra](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/GlobalProtect_InicioSesi%C3%B3n.PNG)
 muestra el inicio de sesión y finalmente
 [esta última](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/GlobalProtect_Conectado.PNG)
-muestra la conexión ya establecida. 
+muestra la conexión ya establecida.
+
+[Este vídeo](https://youtu.be/ZHZ-R--fQ68) muestra cómo establecer en linux una conexión vpn y [este otro](https://www.youtube.com/watch?v=jHUfeN_NMYE&feature=youtu.be) muestra cómo conectar desde linux usando ssh con una máquina virtual del IaaS.
 
 2. Estudie el documento 
 [Manual de administración de Máquinas](https://docs.google.com/document/d/1nj-dxu7LXrNhj3ewCdfaPSc8OV4e_TYpGTQdK78YExY/edit).
