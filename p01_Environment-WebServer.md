@@ -303,178 +303,36 @@ $ nohup sudo -b npm start
 ```
 en el paso 21 anterior.
 
-### Exercism
-[Exercism](https://exercism.io/) es una plataforma orientada a aprender a programar o también a mejorar las
-capacidades de cualquier programadora.
-El objetivo de Exercism es servir como medio para aprender a programar en un determinado lenguaje, y para ello se propone
-hacerlo mediante la resolución de ejercicios que otros usuarios han planteado. 
-Lo que se persigue es que tanto quien resuelve el problema como quien lo planteó aprendan al mismo tiempo. 
-Además, la interacción con el resto de la comunidad podrá llevar a debates para determinar cuál sería la mejor solución para un determinado problema.
+### La plataforma Jutge
+22. **TAREA #09** En su correo electrónico debe tener un mensaje de invitación a la plataforma Jutge.
+Acepte esa invitación y regístrese en la plataforma con su **cuenta de correo institucional**.
 
-La plataforma se basa en una una aplicación de línea de comandos disponible para diferentes sistemas
-operativos (Linux, Mac, Windows).
-Usando esa aplicación, un usuario puede descargar una serie de ejercicios de programación disponibles en la
-plataforma y realizar los correspondientes programas hasta que consiga pasar los diferentes tests que se
-suministran con cada ejercicio.
+[Jutge](https://jutge.org/) es una plataforma que ha sido desarrollada en la
+[UPC](https://www.upc.edu/en) para uso docente en asignaturas de programación.
+La plataforma ofrece una gran cantidad de problemas que los estudiantes han
+de resolver y el Jutge (juez en catalán) asigna un 
+[veredicto](https://jutge.org/documentation/verdicts) 
+a cada solución que se suba a la plataforma.
 
-La plataforma puede ser usada en "modo práctica", en cuyo caso no existe la opción de mentorización (solicitar
-que una experta le ayude con sus ejercicios), pero aún
-así merece la pena practicar los múltiples ejercicios que hallará en la plataforma.
+Jutge solo evalúa los programas desde el punto de vista de la corrección del resultado que ofrecen, 
+no evalúa la calidad del código en cuanto a otros aspectos: diseño, estilo, formato, etc.
+Para determinar si un programa es correcto o no, Jutge aplica varios tests al programa (tests unitarios)
+que tratan de acreditar la bondad de la solución, que podría ser parcialmente correcta.
+Algunos de esos tests son públicos y la programadora debiera encargarse de asegurar que su programa pasa
+esos tests públicos (ofrece los resultados esperados) antes de enviar el programa al juez.
 
-## Primeros pasos en Exercism
-Comience por [registrarse en Exercism](https://exercism.io/users/sign_up). 
-usando su cuenta de GitHub.
-Una vez disponga de una cuenta, configure lo básico de la misma y elija un "track" (un lenguaje) en el que
-desee practicar.
-Obviamente se propone que elija el track correspondiente a JavaScript++.
+[Este documento](https://docs.google.com/presentation/d/14UvZPw4OJvogp6afLeouOAODcBNo5JhgePBQfkiAkic/edit?usp=sharing)
+contiene información algo más detallada sobre el uso de la plataforma Jutge. 
+Estúdielas antes de comenzar a trabajar con la misma.
 
-Propóngase a continuación resolver el problema "Hello World".
-En la página de ese problema (o de cualquier otro) hallará Ud. un enlace que indica *Get started* y 
-[Begin walk-through](https://exercism.io/cli-walkthrough).
-Si sigue ese enlace le llevará a la página *Welcome to the Exercism installation guide!* con instrucciones
-sobre cómo instalar `exercism`.
-En este documento se propone instalarla en la máquina virtual Linux de la asignatura.
-Eligiendo la opción *Linux* y a continuación la opción *Using snap* se le pedirá que ejecute
-```
-$ sudo snap install exercism
-```
-Ese comando instalará en primer lugar `snap` y a continuación `exercism`, que es lo que se persigue.
-También en esa página se indica que se compruebe que la instalación es correcta con el comando
-```
-$ exercism version
-```
-[`snap`](https://blogubuntu.com/que-es-ubuntu-snap) es un mecanismo alternativo al ya conocido
-`apt-get install` para instalar aplicaciones en Ubuntu Linux.
-Si quiere Ud. saber más sobre `snap` puede consultar
-[esta referencia](https://snapcraft.io/docs/getting-started),
-aunque ello no es necesario para el trabajo que se propone realizar con Exercism.
+A la hora de escribir un programa para enviarlo a Jutge ha de tener en cuenta que el programa no ha 
+de escribir otra información como salida que la requerida por los tests de Jutge.
+De este modo, el mensaje inicial que se utiliza para que el programa escriba en pantalla tanto la utilidad
+del mismo como su modo de uso ha de omitirse.
+La recomendación que hacemos es que ese mensaje se escriba en una función que será (o no) invocada desde `main()`.
 
-Una vez instalada la aplicación `exercism` el siguiente paso es configurar la interfaz de comandos (CLI) de la
-aplicación.
-Para ello se pide que se ejecute el comando
-```
-$ exercism configure --token=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-```
-donde el *token* que figura en el comando anterior se encuentra (es específico de cada usuario) en la [página
-de configuración](https://exercism.io/my/settings) de la cuenta de usuario que se ha creado.
-Basta copiar de esa página el token y colocarlo en el comando anterior.
-
-El comando anterior, una vez ejecutado indica:
-```
-You have configured the Exercism command-line client:
-
-Config dir:                       /home/usuario/snap/exercism/5/.config/exercism
-Token:         (-t, --token)      xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-Workspace:     (-w, --workspace)  /home/usuario/snap/exercism/5/exercism
-API Base URL:  (-a, --api)        https://api.exercism.io/v1
-```
-A continuación se puede elegir un problema para pasar a resolverlo.
-Se propone, como ya se ha dicho, elegir el problema "Hello World".
-En la página de ese problema figura una descripción precisa del problema planteado y en la parte derecha de
-esa página figuran las instrucciones para:
-* Download. Descargar el problema mediante el comando `exercism download --exercise=hello-world --track=javascript`
-* Solve. Para resolver el problema se propone usar el editor favorito del usuario. Se recomienda usar Visual
-  Studio Code
-* Submit. El comando para subir a la plataforma la solución que el usuario proponga.
-
-Si se ejecuta el comando para descargar el problema el sistema responde:
-```
-exercism download --exercise=hello-world --track=javascript
-
-Downloaded to
-/home/usuario/snap/exercism/5/exercism/javascript/hello-world
-```
-indicando el directorio donde ha colocado el código necesario para trabajar en ese problema.
-
-Revise los ficheros que exercism ha descargado.
-
-## Solución del ejercicio
-
-El siguiente paso consiste en editar el programa (en el caso del problema *Hello World* el fichero a editar es
-`hello-world.js`).
-Edite ese fichero hasta que considere que tiene una versión operativa.
-
-Si se analizan los tests del problema *Hello World* que figuran en el fichero `hello-world.spec.js`
-se observa que la función que los test evalúan es `hello()`.
-
-En la plantilla que Exercism ofrece para la función, ésta se implementa como una 
-[arrow function](https://javascript.info/arrow-functions-basics):
-
-```js
-export const hello = () => {
-  // Place your code here
-};
-```
-
-Además de la función que evalúan los tests (`hello()` en el caso de este problema) puede Ud. usar cuantas
-otras funciones crea conveniente.
-La solución no tiene porqué aportarse en una única función (depende de la complejidad del programa).
-El módulo que contiene la solución (fichero `hello-world.js`) solo exporta (de ahí la sentencia `export`)
-hacia otros módulos las funciones necesarias para evaluar los tests.
-
-Para los módulos, Exercism utiliza 
-[sintaxis ES6](https://eloquentjavascript.net/10_modules.html#h_hF2FmOVxw7)
-mientras que NodeJS utiliza sintaxis CommonJS.
-Es por ello que el programa que se realice no puede ejecutarse directamente en node.
-Si se ejecuta, en el caso del problema *Hello World* con Node se obtiene un error:
-
-```
-node hello-world.js
-
-export const hello = () => {
-^^^^^^
-
-SyntaxError: Unexpected token 'export'
-```
-
-Para poder ejecutar los programas de Exercism con la sintaxis de módulos de ES6, una posibilidad es usar 
-[babel-node](https://babeljs.io/docs/en/babel-node).
-
-[Babel](https://babeljs.io/)
-es un 
-[transpiler](https://en.wikipedia.org/wiki/Source-to-source_compiler)
-de Javascript. 
-Babel se suele utilizar para escribir código JS con características modernas que pudieran no estar
-contempladas en NodeJS, como ocurre con la sintaxis ES6 para módulos.
-
-Para instalar `babel-node`:
-```
-npm install --save-dev @babel/node
-```
-
-y una vez instalado se pueden ejecutar los programas JS usando `npx`:
-
-```
-npx babel-node hello-world.js
-```
-
-A partir de este punto se debiera desarrollar de forma incremental la solución del problema planteado y se
-puede usar `console.log()` para evaluar provisionalmente la corrección de los resultados que se están
-obteniendo.
-
-## Ejecución de los tests para un determinado problema
-Una vez finalizado su programa, el siguiente paso consiste en pasar (superar) los tests del código.
-Cada ejercicio de Exercism va acompañado de una serie de tests que el programa debe superar para ser
-considerado válido.
-
-Tal como se explica en la página [Running the Tests](https://exercism.io/tracks/javascript/tests), cada problema va
-acompañado de sus tests unitarios.
-
-Para comprobar su solución ejecute:
-
-```
-$ npm run test
-```
-
-Cuando su solución al problema pase todos los tests y esté Ud. satisfecha con la misma, puede remitirla a la
-plataforma.
-Utilice para ello el comando `exercism submit` que hallará Ud. en la página correspondiente al problema.
-Una vez que haya enviado su solución a Exercism recibirá un mensaje similar a este:
-```
-Your solution has been submitted successfully.
-You can complete the exercise and unlock the next core exercise at:
-
-https://exercism.io/my/solutions/xxxx
-```
-A partir de este punto puede ya ver las soluciones que otras usuarias hayan dado al mismo problema o bien
-avanzar con otros problemas de ese mismo "track".
+Una vez que tenga su cuenta en Jutge, realice cuantos ejercicios sea capaz de programar y súbalos para su evaluación
+por el juez, hasta obtener un veredicto de 
+[AC](https://jutge.org/documentation/verdicts/AC)
+(Accepted).
+Cuantos más problemas resuelva, más incrementará sus capacidades como programadora.
