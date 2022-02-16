@@ -20,7 +20,7 @@ function CalculatePI() {
       let fx = Math.sqrt(1 - x * x);  // Circle with radius 1 and center at (0, 0)
       Pi += fx * deltaX;  // rectangle area
       x += deltaX;
-		  debugger;
+		  // debugger;
     }
     Pi = 4 * Pi;
     alert(Pi);
